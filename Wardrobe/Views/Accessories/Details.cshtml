@@ -1,0 +1,40 @@
+﻿@model Wardrobe.Models.Accessory
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Accessory</h4>
+    <hr />
+</div>
+
+<div class="row details">
+    <div class="col-lg-4 col-md-6 col-sm-12 thumbnail ">
+
+
+        <p><img src="@Html.DisplayFor(model => model.Photo)" height="100" width="100" /></p>
+
+        <p class="comments"> @Html.DisplayFor(model => model.Name)</p>
+
+        <p class="comments"> @Html.DisplayNameFor(model => model.Color): @Html.DisplayFor(model => model.Color)</p>
+
+        <p class="comments">@Html.DisplayNameFor(model => model.Season): @Html.DisplayFor(model => model.Season)</p>
+
+        <p class="comments">@Html.DisplayNameFor(model => model.Occasion):  @Html.DisplayFor(model => model.Occasion)</p>
+
+        <p class="comments">
+            @Html.DisplayNameFor(model => model.Type): @Html.DisplayFor(model => model.Type)
+        </p>
+
+
+    </div>
+
+</div>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AccessorieID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

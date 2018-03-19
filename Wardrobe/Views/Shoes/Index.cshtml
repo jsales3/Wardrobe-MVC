@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Wardrobe.Models.Sho>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Shoes</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+<div class="row tops">
+    <div class="col tops1">
+        @foreach (var item in Model)
+        {
+
+            <div class="col-lg-4 col-md-6 col-sm-12 thumbnail">
+
+                <div class="description">
+
+                    <p class="comments"><img src="@Html.DisplayFor(modelItem => item.Photo) " height="100" width="100" /></p>
+
+                    <p class="comments">
+                        @Html.DisplayFor(modelItem => item.Type)
+                    </p>
+
+                    <p class="comments">
+                        @Html.DisplayFor(modelItem => item.Color)
+                    </p>
+
+                    <p class="comments">@Html.DisplayFor(modelItem => item.Name)</p>
+
+
+                    <p class="comments">
+
+                        @Html.ActionLink("Details", "Details", new { id = item.ShoeID }) |
+
+                    </p>
+                </div>
+
+            </div>
+
+
+
+
+        }
+    </div>
+</div>

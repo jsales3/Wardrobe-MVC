@@ -1,0 +1,83 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right top, #bdd3d5, #b3c8c9, #a9bcbd, #a0b1b1, #96a6a6);
+    background-size:cover;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+div.col-lg-4.col-md-6.col-sm-12.thumbnail {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: darkgrey;
+}
+
+div.col-lg-4.col-md-6.col-sm-12.thumbnail:hover {
+    background-color: whitesmoke;
+}
+
+div.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comments {
+    font-family: 'Courgette', cursive;
+    font-size: 15px;
+}
+
+div.row.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1.homepage {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 180px;
+}
+
+div.col.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+ul.nav.navbar-nav {
+    float: right;
+}
+
+
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: darkcyan;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+    color: darkcyan;
+}
